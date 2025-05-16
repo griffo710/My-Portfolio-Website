@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>🏆Achievements | Griffin Githambo</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+
+</head>
+<body>
+  <button class="menu-toggle btn btn-light" onclick="toggleMenu()">☰</button>
+  <div class="sidebar bg-dark" id="sidebar">
+    <a href="index.html"><i class="bi bi-house me-2"></i> Home</a>
+    <a href="about.html"><i class="bi bi-person me-2"></i> About</a>
+    <a href="projects.html"><i class="bi bi-briefcase me-2"></i> Projects</a>
+    <a href="skills.html"><i class="bi bi-tools me-2"></i> Skills</a>
+    <a href="techstack.html"><i class="bi bi-cpu me-2"></i> Tech Stack</a>
+    <a href="achievements.html"><i class="bi bi-award me-2"></i> Achievements</a>
+  </div>
+  <div class="main-content">
+    <h2>Achievements</h2>
+    <p>
+        ✅ Developed an AI marking system which leverages NLP, OCR and other AI technologies to automate the marking 
+            process providing a suitable solution to manual marking of scripts.   
+    </p>
+    <p>
+        ✅ Completed a data analysis course using SPSS and STATA which has equipped me with critical data analysis skills and 
+            influenced me to make decisions based on data.
+    </p>
+  </div>
+  <script>
+    function toggleMenu() {
+      document.getElementById('sidebar').classList.toggle('active');
+    }
+  </script>
+</body>
+</html>
