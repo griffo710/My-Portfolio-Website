@@ -39,10 +39,12 @@
       min-height: 100vh;
       padding-top: 60px;
       position: fixed;
+      transform: translateX(0);
       top: 0;
       left: 0;
       transition: transform 0.3s ease;
       flex-direction: column;
+      z-index: 1000;
     }
     .sidebar a {
       display: block;
