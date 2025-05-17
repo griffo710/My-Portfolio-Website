@@ -75,6 +75,14 @@
       padding: 40px;
       width: 100%;
     }
+
+    footer {
+      text-align: center;
+      font-size: 0.9rem;
+      color: #888;
+      margin-top: 40px;
+    }
+    
     @media (max-width: 768px) {
       .sidebar {
         transform: translateX(-100%);
