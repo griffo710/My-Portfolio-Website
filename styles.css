@@ -13,16 +13,28 @@
     h2 {
       text-decoration: underline;
       font-size: 30px;
+      
     }
 
 
     .main-content {
       max-width: 1000px;
       flex-grow: 1;
-      margin: 0 auto;
-      padding: 20px;
-      
+      padding: 100px;
+      margin-left: 100px;
     }
+
+    .mag-pad {
+      margin-top: 20px;
+      margin-bottom:2px;
+    }
+
+    .img-fluid {
+      max-width: 200px;
+      margin-bottom: 0px;
+    }
+    
+
     
     .profile {
       object-fit: cover;
