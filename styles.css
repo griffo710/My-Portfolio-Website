@@ -17,8 +17,11 @@
 
 
     .main-content {
-      max-width: 600px;
+      max-width: 1000px;
       flex-grow: 1;
+      margin: 0 auto;
+      padding: 20px;
+      
     }
     
     .profile {
@@ -72,11 +75,7 @@
       border: none;
       color: #000;
     }
-    .main-content {
-      margin-left: 250px;
-      padding: 40px;
-      width: 100%;
-    }
+    
 
     footer {
       text-align: center;
@@ -87,7 +86,34 @@
       width: 100%;         
       clear: both;         
       box-sizing: border-box;
+      padding: 0 20px;
     }
+
+    .projects-container {
+      display: flex;
+      flex-wrap: wrap;      /* allows wrapping to next line on small screens */
+      gap: 20px;            /* space between cards */
+      justify-content: center; /* center the row of cards */
+      margin: 40px auto;    /* vertical spacing and center container if you give it a max-width */
+      max-width: 1000px;    /* optional: limit overall width */
+      padding: 0 20px;
+    }
+
+    .project-card {
+      background: #f9f9f9;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      padding: 20px;
+      box-sizing: border-box;
+      width: 300px;         /* card width */
+      flex: 0 1 auto;       /* don’t stretch, allow shrink/grow */
+      text-align: left;
+    }
+
+    .project-card h3 {
+      margin-top: 0;
+    }
+
 
     @media (max-width: 768px) {
       .sidebar {
