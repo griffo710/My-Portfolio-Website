@@ -6,6 +6,7 @@
       height: 100vh;
       text-align: center;
       margin: 0;
+      font-family: 'Segoe UI', sans-serif;
     }
 
     h2 {
@@ -51,6 +52,7 @@
       color: #fff;
       padding: 15px;
       text-decoration: none;
+      transition: background 0.3s ease;
     }
     .sidebar a:hover {
       background-color: #495057;
