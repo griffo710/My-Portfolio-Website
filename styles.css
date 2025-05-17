@@ -7,6 +7,7 @@
       text-align: center;
       margin: 0;
       font-family: 'Segoe UI', sans-serif;
+      flex-direction: column;
     }
 
     h2 {
@@ -17,6 +18,7 @@
 
     .main-content {
       max-width: 600px;
+      flex-grow: 1;
     }
     
     .profile {
@@ -81,8 +83,12 @@
       font-size: 0.9rem;
       color: #888;
       margin-top: 40px;
+      display: block;      
+      width: 100%;         
+      clear: both;         
+      box-sizing: border-box;
     }
-    
+
     @media (max-width: 768px) {
       .sidebar {
         transform: translateX(-100%);
