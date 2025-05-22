@@ -23,6 +23,7 @@
       padding: 0 20px;
       margin-left: 250px;
       width: 100% ;
+      color: white;
       
     }
     .btn {
@@ -121,6 +122,9 @@
       color: #000;
     }
     
+    h3 {
+      background-color: whitesmoke;
+    }
 
     footer {
       text-align: center;
@@ -170,6 +174,7 @@
       text-align: left;
       transition: transform 0.3s ease;
       position: relative;
+      background-color: black;
     }
 
     .project-card.expanded {
