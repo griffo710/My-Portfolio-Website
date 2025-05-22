@@ -124,6 +124,8 @@
     
     h3 {
       background-color: whitesmoke;
+      border-radius: 6px;
+      padding: 5px;
     }
 
     footer {
