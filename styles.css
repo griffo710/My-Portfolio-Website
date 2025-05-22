@@ -1,5 +1,5 @@
     body {
-      background-color: #b6b9bdc5;
+      background-color: #343a40;
       display: flex;
       justify-content: center;
       align-items: center;
@@ -125,13 +125,15 @@
     footer {
       text-align: center;
       font-size: 0.9rem;
-      color: #888;
+      font-weight: bold;
       margin-top: 40px;
       display: block;      
       width: 100%;         
       clear: both;         
       box-sizing: border-box;
       padding: 0 20px;
+      color: #666;
+      text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
     }
 
     .projects-container {
@@ -143,7 +145,16 @@
       max-width: 1200px;
       padding: 0 20px;
       box-sizing: border-box;
+      max-height: 90vh; 
+      overflow-y: auto;
       
+    }
+
+    #projo {
+      color: white;
+      text-align: center;
+      font-size: 2rem;
+      margin-top: 20px;
     }
 
     .project-card {
@@ -151,12 +162,18 @@
       border: 1px solid #ddd;
       border-radius: 15px;
       padding: 20px;
-      width: calc(33.333% - 20px); 
-      min-width: 250px;            
+      width: calc(33.333% - 20px);
+      min-width: 250px;
+      max-height: none; /* Remove fixed height */
+      overflow: visible; /* Allow expanding */
       box-sizing: border-box;
       text-align: left;
       transition: transform 0.3s ease;
-      
+      position: relative;
+    }
+
+    .project-card.expanded {
+      max-height: 1000px; /* Enough to show full content */
     }
 
     .project-card:hover {
@@ -185,8 +202,32 @@
     form label {
       font-weight: 600;
     }
+    
+    .short-description,
+    .full-description {
+      margin-top: 10px;
+    }
 
-    @media (max-width: 768px) {
+    .full-description {
+      display: none;
+    }
+
+    .full-description.visible {
+      display: block;
+    }
+
+    .read-more-btn {
+      background-color: #007bff;
+      color: white;
+      padding: 6px 12px;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      margin-top: 10px;
+    }
+
+
+    @media screen and (max-width: 768px) {
       .sidebar {
         transform: translateX(-100%);
       }
@@ -200,4 +241,11 @@
        .project-card {
         width: 100%;              
       }
+
+      .project-container {
+        flex-direction: column;
+        align-items: center;
+      }
+
+  
     }
