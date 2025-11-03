@@ -146,7 +146,7 @@
       display: flex;
       flex-wrap: wrap;          
       gap: 20px;                 
-      justify-content: center;   
+      justify-content: flex-start;   
       margin: 40px auto;
       max-width: 1200px;
       padding: 0 20px;
@@ -170,8 +170,8 @@
       padding: 20px;
       width: calc(33.333% - 20px);
       min-width: 250px;
-      max-height: none; /* Remove fixed height */
-      overflow: visible; /* Allow expanding */
+      max-height: none; 
+      overflow: visible; 
       box-sizing: border-box;
       text-align: left;
       transition: transform 0.3s ease;
@@ -180,12 +180,12 @@
     }
 
     .project-card.expanded {
-      max-height: 1000px; /* Enough to show full content */
+      max-height: 900px; 
     }
 
     .project-card:hover {
       transform: translateY(-5px);
-      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
     }
 
     .project-card h3 {
@@ -228,7 +228,7 @@
    
     .video-container {
       margin: 3px auto;
-      max-width: 700px; /* or whatever width you want */
+      max-width: 700px; 
     }
 
 
