@@ -261,6 +261,27 @@
       margin-top: 10px;
     }
 
+    .achievements-list {
+      list-style: none;
+      padding-left: 0;
+    }
+
+    .achievements-list li {
+      margin-bottom: 1.5rem;
+      padding-left: 1rem;
+      border-left: 3px solid #4f46e5; 
+    }
+
+    .achievements-list strong {
+      font-size: 1.05rem;
+    }
+
+    .achievements-list span {
+      color: #4f46e5;
+      font-weight: 500;
+    }
+
+
 
     @media screen and (max-width: 768px) {
       .sidebar {
