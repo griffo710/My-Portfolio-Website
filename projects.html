@@ -30,19 +30,38 @@
     
     <section class="projects-container">
       <div class="project-card">
-        <h3>Automated Machine Learning Data Pipeline</h3>
-        <p><strong>Technologies:</strong> Python, Pipeline Module, Data Validation</p>
+        <h3>Data Preparation Pipeline for Machine Learning</h3>
+        <p><strong>Technologies:</strong> Python, pandas, scikit-learn, PyYAML, pytest, GitHub Actions</p>
 
         <p class="short-description">
-          A reusable data pipeline that automates cleaning, validation, and preprocessing for analytics and ML workflows.
+          A config-driven pipeline that validates a tabular dataset, removes duplicate
+          rows, splits it into train and test sets, and fills missing values using
+          statistics learned from the training set only.
         </p>
 
-        <p class="full-description hidden">
-          Designed and implemented a modular data processing pipeline using Python’s pipeline architecture to automate
-          data cleaning, validation, and transformation. The system allows analysts and data scientists to input raw datasets
-          and receive clean, analysis-ready data suitable for EDA and machine learning tasks. This project demonstrates
-          strong understanding of data engineering fundamentals and reproducible ML workflows.
+        <p class="project-links">
+          <a href="https://github.com/griffo710/Data_Pipeline" target="_blank" rel="noopener noreferrer">View on GitHub</a>
         </p>
+
+        <div class="full-description hidden">
+          <p>
+            I built this to practise preparing data for modelling without leaking
+            information from the test set. The pipeline reads its settings from a YAML
+            file, validates columns, data types, value ranges and missing-value
+            thresholds, removes duplicates, drops rows with a missing target, and makes
+            a stratified train/test split. Two custom scikit-learn-style transformers,
+            a missing-value imputer and a duplicate remover, do the cleaning. Each run
+            is logged with a unique ID, and a pytest suite runs in GitHub Actions.
+          </p>
+          <p>
+            While reviewing my own first version, I found that the imputer was being
+            fitted on the whole dataset and was also filling in the target column. I
+            restructured the pipeline to split first and fit on the training set only,
+            and added tests that check this behaviour. The demo dataset (Crop
+            Recommendation, 2,200 rows) has no missing values, so imputation and
+            deduplication are demonstrated in the tests.
+          </p>
+        </div>
 
         <button class="read-more-btn">Read More</button>
       </div>
